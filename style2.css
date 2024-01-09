@@ -1,0 +1,86 @@
+body {
+    background-image: url("./vinyl.jpg");
+    background-attachment: fixed;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.available {
+    margin-left: 100px;
+    margin-top: 70px;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 35px;
+    transition: color 0.3s ease-in-out;
+}
+
+.song-card {
+    margin-left: 100px;
+    margin-top: 40px;
+    background-color: #fff;
+    width: 400px;
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 16px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+.album-cover {
+    float: left;
+    display: flex;
+    padding: 0px;
+    width: 130px;
+    height: 130px;
+}
+
+.song-name {
+    float: left;
+    padding: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.artist-name {
+    font-family: 'Nunito Sans', sans-serif;
+    opacity: 60%;
+    font-size: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
