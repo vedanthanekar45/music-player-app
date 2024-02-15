@@ -6,6 +6,7 @@ let way = document.querySelector("#way");
 let paradise = document.querySelector("#paradise");
 let scientist = document.querySelector("#scientist");
 let count = 0;
+const block = document.querySelector(".song-card");
 
 loveislong.addEventListener("click", function() {
     document.querySelector('body').style.backgroundImage = "url('./background/loveisalongroad.jpg')";
@@ -92,3 +93,7 @@ scientist.addEventListener("click", function() {
         h.pause();
     }
 })
+
+block.addEventListener("click", () => {
+    
+}
